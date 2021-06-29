@@ -36,11 +36,12 @@ function Products() {
       <h2>
         Products
       </h2>
-      <ul>
         {
-          listProducts
+          listProducts.length > 0 && <ul>{ listProducts }</ul>
         }
-      </ul>
+        {
+          listProducts.length <= 0 && <span>No fruit today</span>
+        }
     </div>
   )
 }

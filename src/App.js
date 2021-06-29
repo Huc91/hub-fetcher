@@ -1,5 +1,6 @@
 //components
 import Products from './Products';
+import HubUsers from './HubUsers';
 import Button from 'react-bootstrap/Button';
 
 import './App.css';
@@ -10,6 +11,7 @@ function App() {
         <h1>
           React Hooks
         </h1>
+        <HubUsers></HubUsers>
         <br/>
         <Products />
         <Button>Add fruit</Button>
