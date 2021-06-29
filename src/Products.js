@@ -27,7 +27,7 @@ const products = [
 ]
 
 const listProducts = products.map( (product, i ) => {
-  return <li key={product+i}> <Product title={product.name} img={product.img}/> </li>
+  return <Product key={product+i} title={product.name} img={product.img}/>
 } );
 
 function Products() {

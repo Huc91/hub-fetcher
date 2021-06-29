@@ -2,24 +2,19 @@ import React from 'react';
 
 //components
 import Media from 'react-bootstrap/Media';
+import Card from 'react-bootstrap/Card';
 
 import JuicyRating from './JuicyRating';
 
 const Product = (props) => {
   return (
-  <Media>
-    <img
-      width={64}
-      height={64}
-      className="mr-3"
-      src={props.img}
-      alt="Generic placeholder"
-    />
-    <Media.Body>
-      <h5>{ props.title }</h5>
-      <JuicyRating />
-    </Media.Body>
-  </Media>
+  <Card style={{ width: '14rem' }}>
+  <Card.Img variant="top" src={props.img} />
+  <Card.Body>
+    <Card.Title>{ props.title }</Card.Title>
+    <JuicyRating />
+  </Card.Body>
+  </Card>
   )
 }
 
