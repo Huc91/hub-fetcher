@@ -11,7 +11,7 @@ import styles from './JuicyRating.module.css';
 
 const stars = [1, 2, 3, 4, 5];
 
-function JuicyRating(props) {
+const JuicyRating = (props) => {
 
   const [rate, setRate ] = useState(props.rate);
 
