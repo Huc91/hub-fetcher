@@ -13,7 +13,9 @@ function App() {
         </h1>
         <HubUsers></HubUsers>
         <br/>
-        <Products />
+        <Products>
+          Your island fruits
+        </Products>
         <Button>Add fruit</Button>
     </div>
   );

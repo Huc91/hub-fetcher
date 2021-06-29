@@ -30,11 +30,11 @@ const listProducts = products.map( (product, i ) => {
   return <Product key={product+i} title={product.name} img={product.img}/>
 } );
 
-function Products() {
+function Products(props) {
   return (
     <div>
       <h2>
-        Products
+        { props.children}
       </h2>
         {
           listProducts.length > 0 && <ul>{ listProducts }</ul>
