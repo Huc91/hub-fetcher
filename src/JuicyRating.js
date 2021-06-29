@@ -13,7 +13,7 @@ const stars = [1, 2, 3, 4, 5];
 
 const JuicyRating = (props) => {
 
-  const [rate, setRate ] = useState(props.rate);
+  const [rate, setRate ] = useState(props.rate || 0);
 
   const handleClickRate = (i) => {
     setRate(i+1);
