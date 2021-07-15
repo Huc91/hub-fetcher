@@ -32,12 +32,17 @@ const Product = (props) => {
     dispatch({type: 'increment'});
   }
 
+  const getFromChild = (childData) => {
+    console.log(childData);
+  }
+
   return (
   <Card style={{ width: '14rem' }}>
   <Card.Img variant="top" src={props.img} />
   <Card.Body>
     <Card.Title>{ props.title }</Card.Title>
-    <JuicyRating />
+    {/* example of communication from child to parent */}
+    <JuicyRating getFromChild={getFromChild}/>
   </Card.Body>
   <Card.Text>
     { quantity }

@@ -17,6 +17,8 @@ const JuicyRating = (props) => {
 
   const handleClickRate = (i) => {
     setRate(i+1);
+    //example of communication from child to parent
+    props.getFromChild(i+1);
   }
 
   const printStars = (rate) => {
